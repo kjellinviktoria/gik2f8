@@ -1,8 +1,8 @@
 function BookInfo(book){
   let html
     if (book.coverImage == ""){
-      html = `<ul id="bookDetail" class="float-right box-border h-[12rem] w-64 border-4 rounded-md border-black bg-neutral-700 list-inside">
-          <li class="text-2xl font-semibold m-1">${book.title}</li>
+      html = `<ul id="bookDetail" class="float-right box-border h-[12rem] w-64  border-3 rounded-md border-blue-400 bg-gradient-to-b from-emerald-300 to-rose-300 h-screen list-inside">
+          <li class="text-xl font-semibold m-2">${book.title}</li>
           <li class="m-2">Författare: ${book.author}</li>
           <li class="m-2">Sidor: ${book.pages}</li>
           <li class="m-2">Utgivningsår: ${book.releaseDate}</li>
@@ -10,13 +10,12 @@ function BookInfo(book){
     }
     else {
       
-     html = `<ul id="bookDetail" class="float-right box-border h-[30rem] w-64 border-4 rounded-md border-black bg-neutral-700 list-inside">
-          <li class="text-2xl font-semibold m-1">Title: ${book.title}</li>
-          <li class="m-2">Author: ${book.author}</li>
-          <li class="m-2">Pages: ${book.pages}</li>
-          <li class="m-2">Year: ${book.releaseDate}</li>
-          <img class="float-right max-w-[70%] m-2" src="${book.coverImage}" alt="Cover of the book">
-          <p class="m-2">Cover: </p>
+     html = `<ul id="bookDetail" class="float-right box-border h-[29rem] w-64 border-3 rounded-md border-blue-400 bg-gradient-to-b from-emerald-300 to-rose-300 h-screen list-inside">
+          <li class="text-xl font-semibold m-2">${book.title}</li>
+          <li class="m-2">Författare: ${book.author}</li>
+          <li class="m-2">Sidor: ${book.pages}</li>
+          <li class="m-2">Utgivningsår: ${book.releaseDate}</li>
+          <img class="mx-auto max-w-[70%] mt-4" src="${book.coverImage}" alt="Cover of the book">
       </ul>`;
     
   
